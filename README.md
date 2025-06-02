@@ -1,4 +1,4 @@
-# 🌐 Personal Website - Online Resume  
+# 🌐 Personal Website
 
 Welcome to my personal portfolio website, designed to showcase my projects, certifications, skills, and professional background in a clean, accessible, and responsive format.
 
