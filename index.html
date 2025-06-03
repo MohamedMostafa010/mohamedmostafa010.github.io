@@ -143,6 +143,9 @@
       font-size: 3rem;
       color: #004080;
       transition: color 0.3s ease, transform 0.3s ease;
+      cursor: pointer; /* Added for better mobile touch */
+      display: inline-block; /* Ensures cursor works properly */
+      padding: 0.5rem; /* Larger touch target for mobile */
     }
     
     .github-icon:hover {
@@ -834,6 +837,12 @@
       
       .common-links a {
         font-size: 2rem;
+      }
+      
+      /* Larger touch targets for mobile */
+      .github-icon {
+        font-size: 2.5rem;
+        padding: 1rem;
       }
     }
     
