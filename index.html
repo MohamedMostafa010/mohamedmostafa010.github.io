@@ -210,18 +210,61 @@
     </nav>
   </header>
 
-  <main>
+    <main>
     <section id="about" class="section about-section">
-      <h1>Mohamed Mostafa Ali</h1>
+      <div class="about-header">
+        <h1>Mohamed Mostafa Ali</h1>
+        <p class="subtitle">Cybersecurity Student | SOC Analyst | AI Security Researcher</p>
+      </div>
       <div class="about-content">
-        <img src="assets/CV_image_2.jpeg" alt="Mohamed Mostafa" class="profile-photo" onclick="openModal(this)" />
-        <ul class="about-list">
-          <li>I'm <strong>Mohamed Mostafa Ali</strong>, a <strong>Computer Science student</strong> specializing in <strong>Cybersecurity</strong> at the <strong>Arab Academy for Science, Technology & Maritime Transport (GPA: 3.54/4.0).</strong> Passionate about threat analysis and automation, I've interned at <strong>CIB and NBE</strong>, gaining hands-on IT and teamwork experience. <strong>My projects include malware analysis, threat modeling, and cloud-based red teaming labs, using tools like MITRE ATT&CK, Docker, and Terraform.</strong></li>
-          <li>Certified in <strong>Security+, eJPT, and CCNA, I excel in SOC operations, scripting (Python/Bash), and network security.</strong> Ranked in <strong>TryHackMe's top 2%</strong>, I thrive in problem-solving and fast-paced environments. Fluent in English and Arabic, I combine technical skills with strong communication and adaptability.</li>
-          <li>I aim to <strong>build secure systems and contribute to cybersecurity innovation.</strong> Let's connect and collaborate!</li>
-        </ul>
+        <div class="profile-container">
+          <img src="assets/CV_image_2.jpeg" alt="Mohamed Mostafa" class="profile-photo" onclick="openModal(this)" />
+          <div class="quick-facts">
+            <div class="fact-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.Sc. Computer Science (Cybersecurity)</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-university"></i>
+              <span>Arab Academy for Science, Technology & Maritime Transport</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-chart-line"></i>
+              <span>GPA: 3.61/4.0 (Excellent)</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-trophy"></i>
+              <span>Top 1% TryHackMe (300+ rooms)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="professional-summary">
+          <h2>Professional Summary</h2>
+          <p>Cybersecurity student with hands-on experience in threat detection, malware analysis, and AI-driven security solutions. Currently developing <strong>DroneSentinel</strong> – an AI-powered security gap monitoring system as my graduation project.</p>
+          
+          <div class="expertise-grid">
+            <div class="expertise-category">
+              <h3><i class="fas fa-shield-alt"></i> Security Domains</h3>
+              <p class="skills-list centered-text">SOC Operations, Threat Intelligence, Penetration Testing, Digital Forensics</p>
+            </div>
+            <div class="expertise-category">
+              <h3><i class="fas fa-code"></i> Technical Skills</h3>
+              <p class="skills-list centered-text">Python, Bash, Docker, ELK Stack, ML/AI, Terraform, Splunk</p>
+            </div>
+            <div class="expertise-category">
+              <h3><i class="fas fa-briefcase"></i> Experience</h3>
+              <p class="skills-list centered-text">WE Innovate Bootcamp (SOC Analyst), NBE (IT Trainee), CIB (Intern)</p>
+            </div>
+          </div>
+          
+          <p class="closing-statement">Seeking opportunities to apply my skills in threat detection engineering and contribute to innovative cybersecurity solutions.</p>
+        </div>
+        
         <div class="cv-download">
-          <a href="assets/ATS_CV_93.pdf" target="_blank">Download My CV</a>
+          <a href="assets/Mohamed_Mostafa_Ali_Cybersecurity_Resume.pdf" target="_blank">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
         </div>
       </div>
     </section>
@@ -244,6 +287,8 @@
     <section id="projects" class="section projects-section">
       <h2>Projects (Chronological Order - Oldest First)</h2>
       <div class="projects-list">
+        
+        <!-- Existing Projects -->
         <article class="project-item">
           <h3 style="text-align: center;">University Financial System Threat Modeling and Security Testing Using MTM 2016</h3>
           <div class="project-images">
@@ -359,6 +404,128 @@
             </a>
           </div>
         </article>
+
+        <!-- NEW PROJECTS ADDED HERE -->
+        
+        <article class="project-item">
+          <h3 style="text-align: center;">Metasploitable 2 Security Assessment – 46 Findings Report</h3>
+          <div class="project-images">
+            <img src="assets/metasploitable_report.jpg" alt="Metasploitable 2 Assessment" onclick="openModal(this)" style="margin: 0 auto; display: block;"/>
+          </div>
+          <ul class="project-description">
+            <li>Comprehensive penetration testing report against Metasploitable 2 VM</li>
+            <li>Identified 46 security findings across network services and web applications</li>
+            <li>Covered Network Services (17), Web Applications (22), Privilege Escalation (4), Enumeration (3)</li>
+            <li>Tools used: Metasploit, Nmap, Nikto, SQLMap, manual exploitation</li>
+            <li>Team-based project simulating real-world healthcare IT infrastructure testing</li>
+          </ul>
+          <div class="github-icon-container">
+            <a href="https://github.com/MohamedMostafa010/Metasploitable2_Pentest_46Findings" target="_blank" aria-label="GitHub Repository">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3 style="text-align: center;">Decentralized IoT Authentication on Ethereum</h3>
+          <div class="project-images">
+            <img src="assets/iot_auth.jpg" alt="IoT Authentication Smart Contract" onclick="openModal(this)" style="margin: 0 auto; display: block;"/>
+          </div>
+          <ul class="project-description">
+            <li>Solidity smart contract for secure IoT device authentication on Ethereum blockchain</li>
+            <li>Features device registration/deregistration (owner-only)</li>
+            <li>Secure data recording using hashed payloads with replay attack protection</li>
+            <li>Event-based logging for full transparency and audit trails</li>
+            <li>Paris EVM compatible (post-Merge Ethereum)</li>
+            <li>Provides decentralized authentication and data integrity for IoT devices</li>
+          </ul>
+          <div class="github-icon-container">
+            <a href="https://github.com/MohamedMostafa010/DecentralizedIoTAuth" target="_blank" aria-label="GitHub Repository">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3 style="text-align: center;">MISP Threat Intelligence Journey</h3>
+          <div class="project-images">
+            <img src="assets/misp_threat_intel.jpg" alt="MISP Threat Intelligence" onclick="openModal(this)" style="margin: 0 auto; display: block;"/>
+          </div>
+          <ul class="project-description">
+            <li>Comprehensive exploration of MISP (Malware Information Sharing Platform)</li>
+            <li>Threat intelligence platform setup and configuration</li>
+            <li>Analysis of IOC (Indicators of Compromise) sharing and collaboration</li>
+            <li>Integration with other security tools and platforms</li>
+            <li>Real-world threat intelligence workflows and best practices</li>
+          </ul>
+          <div class="github-icon-container">
+            <a href="https://github.com/MohamedMostafa010/MISP_ThreatIntelJourney" target="_blank" aria-label="GitHub Repository">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3 style="text-align: center;">Conpot ICS Honeypot Analysis</h3>
+          <div class="project-images">
+            <img src="assets/conpot_ics.jpg" alt="Conpot ICS Honeypot" onclick="openModal(this)" style="margin: 0 auto; display: block;"/>
+          </div>
+          <ul class="project-description">
+            <li>Industrial Control Systems (ICS) honeypot deployment using Conpot</li>
+            <li>Simulates realistic industrial protocols (Modbus, S7Comm, BACnet, SNMP)</li>
+            <li>Captures attacker reconnaissance behavior and ICS-targeted threats</li>
+            <li>Analysis using Nmap, Wireshark, and traffic capture tools</li>
+            <li>Documented attacker interaction patterns and tool behaviors</li>
+            <li>Critical for infrastructure security in energy, water, and manufacturing</li>
+          </ul>
+          <div class="github-icon-container">
+            <a href="https://github.com/MohamedMostafa010/Conpot_ICS_Honeypot_Lab" target="_blank" aria-label="GitHub Repository">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3 style="text-align: center;">IoTCPS-AI-IDS: AI-Based Intrusion Detection System</h3>
+          <div class="project-images">
+            <img src="assets/iotcps_ai_ids.png" alt="IoT AI IDS System" onclick="openModal(this)" style="margin: 0 auto; display: block;"/>
+          </div>
+          <ul class="project-description">
+            <li>Deep learning-based Intrusion Detection System for IoT Cyber-Physical Systems</li>
+            <li>Achieves 99.6% accuracy detecting IoT network attacks</li>
+            <li>Detects Mirai botnet, DoS, MITM, and scanning attacks</li>
+            <li>Real-time detection with TensorFlow backend</li>
+            <li>Includes model serialization, preprocessing pipeline, and evaluation tools</li>
+            <li>Trained on IoTID20 dataset (3.2 million network flows, 85+ features)</li>
+          </ul>
+          <div class="github-icon-container">
+            <a href="https://github.com/MohamedMostafa010/IoTCPS-AI-IDS" target="_blank" aria-label="GitHub Repository">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3 style="text-align: center;">DroneSentinel: AI-Based Security Gap Monitoring System</h3>
+          <div class="project-images">
+            <img src="assets/dronesentinel.png" alt="DroneSentinel Project" onclick="openModal(this)" style="margin: 0 auto; display: block;"/>
+          </div>
+          <ul class="project-description">
+            <li>Graduation Project - Specialized AI-based drone detection system</li>
+            <li>Focused security gap monitoring (not general detection)</li>
+            <li>Three security gaps: Radar overhead blind spot, Perimeter chokepoints, Visual verification</li>
+            <li>Uses YOLOv8 + BoT-SORT for advanced tracking and analytics</li>
+            <li>AES-256 encryption, secure authentication, audit trails</li>
+            <li>Real-time alerts, multi-channel notifications, performance analytics</li>
+            <li>Cost-effective alternative to human guards (90% savings)</li>
+          </ul>
+          <div class="github-icon-container">
+            <a href="https://github.com/MohamedMostafa010/DroneSentinel" target="_blank" aria-label="GitHub Repository">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          </div>
+        </article>
+        
       </div>
     </section>
 
@@ -380,6 +547,8 @@
         <img src="assets/SSDLC_Course_Certificate_En.jpg" alt="Certificate 13" onclick="openModal(this)" />
         <img src="assets/IUGRC_Certificate.jpeg" alt="Certificate 14" onclick="openModal(this)" />
         <img src="assets/CompTIA_CySA.jpg" alt="Certificate 15" onclick="openModal(this)" />
+        <img src="assets/THM-EUXMVPFKXK.jpg" alt="Certificate 16" onclick="openModal(this)" />
+        <img src="assets/THM-PHVFBGXTOH.png" alt="Certificate 17" onclick="openModal(this)" />
       </div>
     </section>
 
@@ -405,7 +574,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Mohamed Mostafa. All rights reserved.</p>
+    <p>© 2026 Mohamed Mostafa. All rights reserved.</p>
   </footer>
 
   <!-- Image Modal -->
@@ -790,7 +959,225 @@
       transition: border-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Responsive */
+    /* About Section Styling */
+    .about-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #004080;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .quick-facts {
+      flex: 1;
+      min-width: 300px;
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #004080;
+    }
+
+    .fact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .fact-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .fact-item i {
+      color: #004080;
+      font-size: 1.2rem;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    .professional-summary {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+      border: 1px solid #e9ecef;
+    }
+
+    .professional-summary h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    /* FIXED: Expertise Grid - Now centers Experience box */
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    /* Target the 3rd item (Experience) to span across and center */
+    .expertise-category:nth-child(3) {
+      grid-column: 1 / -1; /* Make it span all columns */
+      max-width: 500px; /* Limit width for better centering */
+      margin: 0 auto; /* Center the box horizontally */
+      justify-self: center; /* Center within the grid cell */
+    }
+
+    .expertise-category {
+      background: #004080; /* Changed to blue background */
+      padding: 1.5rem;
+      border-radius: 6px;
+      border-top: 3px solid #0073e6; /* Cyan border */
+      transition: transform 0.3s ease;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white; /* White text for entire card */
+    }
+
+    .expertise-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 115, 230, 0.3);
+      background: #0073e6; /* Lighter blue on hover */
+    }
+
+    .expertise-category h3 {
+      color: #00bcd4; /* Cyan color for titles */
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    .expertise-category h3 i {
+      font-size: 1rem;
+      color: #00bcd4; /* Cyan icons */
+    }
+
+    .skills-list {
+      font-size: 0.95rem;
+      text-align: center !important;
+      width: 100%;
+      line-height: 1.5;
+      color: white !important; /* White text for skills */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* NEW: Centered text class */
+    .centered-text {
+      text-align: center !important;
+    }
+
+    /* REDUCED SPACE: Decreased margin-top from 1.5rem to 0.5rem */
+    .closing-statement {
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+      margin-top: 0.5rem; /* REDUCED from 1.5rem to 0.5rem */
+    }
+
+    /* REDUCED SPACE: Decreased margin-top from 2rem to 0.5rem */
+    .cv-download {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem; /* REDUCED from 2rem to 0.5rem */
+    }
+
+    .cv-download a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.9rem 2rem;
+      background-color: #004080;
+      color: white;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cv-download a:hover {
+      background-color: #0073e6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 115, 230, 0.3);
+      color: white;
+    }
+
+    .cv-download a i {
+      font-size: 1.1rem;
+    }
+
+    /* Dark mode adjustments */
+    body.dark-mode .quick-facts {
+      background-color: #1e1e1e;
+      border-left-color: #64b5f6;
+    }
+
+    body.dark-mode .fact-item i {
+      color: #64b5f6;
+    }
+
+    body.dark-mode .professional-summary {
+      background-color: #1e1e1e;
+      border-color: #333;
+    }
+
+    body.dark-mode .expertise-category {
+      background-color: #004080; /* Keep blue in dark mode */
+      border-top-color: #00bcd4; /* Cyan border */
+    }
+
+    body.dark-mode .expertise-category:hover {
+      background-color: #0073e6; /* Lighter blue on hover */
+    }
+
+    body.dark-mode .expertise-category h3 {
+      color: #00bcd4; /* Cyan in dark mode */
+    }
+
+    body.dark-mode .expertise-category h3 i {
+      color: #00bcd4; /* Cyan icons */
+    }
+
+    body.dark-mode .skills-list {
+      color: white !important; /* Keep white text */
+    }
+
+    body.dark-mode .closing-statement {
+      color: #ccc;
+      border-top-color: #444;
+    }
+
+    /* Responsive adjustments */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.2rem;
@@ -824,6 +1211,31 @@
       
       .project-images img {
         width: 100%;
+      }
+      
+      .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .quick-facts {
+        width: 100%;
+      }
+      
+      /* FIXED: Stack all items vertically on mobile */
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .expertise-category:nth-child(3) {
+        grid-column: 1; /* Reset to single column on mobile */
+        max-width: 100%;
+      }
+      
+      .cv-download a {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
       }
       
       .certificates-list {
